@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  /* Theme Colors */
+  --color-brand: #FF6B00;       /* Bright Orange Accent */
+  --color-brand-hover: #E55C00;
+  
+  --color-bg-dark: #131313;     /* Deep Black Background */
+  --color-bg-light: #1A1A1A;    /* Slightly lighter dark background used for cards */
+  --color-bg-card: #202020;
+
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #949494;
+  --color-text-muted: #555555;
+  --color-border: #333333;
+
+  /* Font Families */
+  --font-syne: "Syne", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
+}
+
+/* Custom base styles */
+@layer base {
+  body {
+    font-family: var(--font-rubik);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-dark);
+  }
+}
+
+/* Component specifics or utilities */
+.text-outline {
+  -webkit-text-stroke: 1px var(--color-brand);
+  color: transparent;
+}
