@@ -61,7 +61,7 @@ pub fn App() -> impl IntoView {
         <Stylesheet id="leptos" href="/pkg/myself.css"/>
 
         // sets the document title
-        <Title text="My Self — Adaptive Logo Design"/>
+        <Title text="My Self — All about Subbar"/>
 
         // content for this welcome page
         <Router>

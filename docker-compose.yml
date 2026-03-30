@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      # Melakukan mapping folder 'data' di mesin lokal Anda ke '/app/data' di dalam container.
+      # Ini memastikan file database SQLite Anda tersimpan secara persisten.
+      - ./data:/app/data
+    environment:
+      # Mengarahkan SQLx untuk membaca dan menulis database di folder yang sudah di-mount
+      - DATABASE_URL=sqlite:///app/data/app.db
+    restart: unless-stopped
