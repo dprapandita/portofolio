@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "127.0.0.1:8000:8000"
     volumes:
       # Melakukan mapping folder 'data' di mesin lokal Anda ke '/app/data' di dalam container.
       # Ini memastikan file database SQLite Anda tersimpan secara persisten.

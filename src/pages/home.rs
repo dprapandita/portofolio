@@ -11,11 +11,14 @@ pub fn HomePage() -> impl IntoView {
             // Hero section
             <section class="text-center flex flex-col items-center gap-6 mt-10">
                 <h1 class="font-syne font-bold text-6xl md:text-8xl text-white tracking-tight leading-tight max-w-5xl">
-                    "Adaptive Logo Design for Your Brand"
+                    "My journey life"
                 </h1>
                 
                 <div class="mt-4">
-                    <PrimaryButton label="Explore Projects".to_string() />
+                    <PrimaryButton
+                     label="Explore Projects".to_string()
+                      href="/projects"
+                    />
                 </div>
             </section>
 
@@ -27,7 +30,10 @@ pub fn HomePage() -> impl IntoView {
                         "My Self is a New York-based architectural designer with a passion for building minimal, adaptive visual identities. With over a decade of experience, we focus on clarity, precision, and purpose."
                     </p>
                     <div class="mt-4">
-                        <PrimaryButton label="Discover More About Me".to_string() />
+                        <PrimaryButton
+                         label="Discover More About Me".to_string()
+                          href="/about"
+                        />
                     </div>
                 </div>
                 
